@@ -1,0 +1,51 @@
+@import "var";
+@import "mixin";
+body{
+  background-color: #f1f3f6;
+}
+.mainLayout{
+  .header1 {
+    @include commoncode($bg-color,2.6);
+    color:white;
+  }
+  .header2 {
+    @include commoncode(white,2.5);
+    @include itemCenter;
+  }
+}
+.searchBox{
+  background: white;
+  width: 500px;
+  height: 28px;
+  margin-top: 1px;
+  margin-bottom: 5px
+}
+.emptyspace{
+  width: 300px;
+}
+.headerLogin{
+  @include clickableName(40px);
+}
+.productType{
+  @include clickableName(20px);
+}
+.FlipkartName{
+  @include clickableName(10px);
+  font-size: 18px;
+}
+.productOutline{
+  @include itemCenter;
+  width: auto;
+  padding:0 10px;
+}
+
+.bottom{
+  display: flex;
+}
+.bottom-left{
+  @include commonbottom(300px);
+  margin-right: 0px;
+}
+.bottom-right{
+  @include commonbottom(100%);
+}

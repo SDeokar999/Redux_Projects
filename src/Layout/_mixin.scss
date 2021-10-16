@@ -1,0 +1,24 @@
+@mixin commoncode($bgcolor,$lineheight){
+  text-align: center;
+  height: 45px;
+  line-height: $lineheight;
+  background-color: $bgcolor;
+}
+@mixin commonbottom($width){
+  min-height: 670px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px lightgray;
+  width: $width;
+}
+@mixin itemCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin clickableName($paddingsize){
+  width: auto;
+  padding: 0 $paddingsize;
+  font-weight: 500;
+  cursor: pointer;
+}
